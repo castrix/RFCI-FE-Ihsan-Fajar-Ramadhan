@@ -2,10 +2,10 @@
 
 Terdapat 6 buah bug yang saya temukan yang menyebabkan hasil tidak seperti yang diharapkan
 
-1. Dalam `App.js` kekurangan clientId, clientSecret, redirectUri
+### 1. Dalam `App.js` kekurangan clientId, clientSecret, redirectUri
 Pada github, saya membuat aplikasi baru untuk mendapatkan clientId dan clientSecret, juga untuk mengatur redirectUri-nya ke `http://localhost:3000/`.
 
-2. Pada baris ke 17 dalam `utils.js`
+### 2. Pada baris ke 17 dalam `utils.js`
 
 Dari:
 
@@ -17,7 +17,7 @@ Perbaikan menjadi:
 
     let query = `${str}${key}=${params[key]}`;
 
-3. Pada fungsi `onSuccess` dalam `GithubLogin.js`
+### 3. Pada fungsi `onSuccess` dalam `GithubLogin.js`
 
 Dari:
 
@@ -31,10 +31,10 @@ Perbaikan menjadi:
 
 Argumen yang dimasukkan direferensikan pada isi objek `data` dengan nama `code`.
 
-4. Permasalahan `CORS` dari github yang tidak menerima request dari `http://localhost:3000`
+### 4. Permasalahan `CORS` dari github yang tidak menerima request dari `http://localhost:3000`
 solusi: menggunakan `https://cors-anywhere.herokuapp.com/`
 
-5. Pada fungsi `onGetAccessToken` dalam `GithubLogin.js`
+### 5. Pada fungsi `onGetAccessToken` dalam `GithubLogin.js`
 
 Dari:
 
@@ -48,7 +48,7 @@ menjadi
     .then((response) => {
         this.onGetProfile(response.data.access_token);
 
-6. Pada fungsi `onGetProfile` dalam `GithubLogin.js`
+### 6. Pada fungsi `onGetProfile` dalam `GithubLogin.js`
 
 Dari:
 
