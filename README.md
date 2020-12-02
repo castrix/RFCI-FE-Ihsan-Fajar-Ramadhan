@@ -6,8 +6,11 @@ Terdapat pada file `./sort.js`.
 Program sorting menggunakan satu buah while-loop dan satu buah for-loop. While-loop berfungsi untuk memastikan bahwa angka dalam deret sudah tersortir. Selama ada angka dalam deret yang di-swap atau di tukar, maka while-loop akan terus berjalan. Dalam for-loop, apabila ada angka yang di-swap atau ditukar, maka akan menentukan nilai swapped = true. Angka yang ditukar akan disimpan dalam variabel swap dalam bentuk array. Setiap ada angka yang ditukar maka akan melakukan console.log dengan isi angka yang ditukar dan hasil penukarannya. Jumlah angka yang ditukar juga dihitung setiap ada penukaran.
 
 input:
+
     4 9 7 5 8 9 3
+
 output:
+
     [7,9] -> 4 7 9 5 8 9 3
     [5,9] -> 4 7 5 9 8 9 3
     [5,7] -> 4 5 7 9 8 9 3
