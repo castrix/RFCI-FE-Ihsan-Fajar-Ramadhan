@@ -31,7 +31,7 @@ Perbaikan menjadi:
 
 Argumen yang dimasukkan direferensikan pada isi objek `data` dengan nama `code`.
 
-### 4. Permasalahan `CORS` dari github yang tidak menerima request dari `http://localhost:3000` pada request dari axios
+### 4. Permasalahan `CORS` dari github yang tidak menerima request dari `http://localhost:3000` pada request axios fungsi `onGetAccessToken` dan `onGetProfile`
 solusi: menggunakan `https://cors-anywhere.herokuapp.com/`
 
 ### 5. Pada fungsi `onGetAccessToken` dalam `GithubLogin.js`
