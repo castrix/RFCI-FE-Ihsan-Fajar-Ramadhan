@@ -14,8 +14,8 @@ const sort=(deret)=>{
                 swap[0]=deret[j];
                 deret[j + 1] = temp;
                 swap[1]=temp;
-                console.log(`[${swap.toString()}] -> ${deret.join(" ")}`);
                 jumlah=jumlah+1;
+                console.log(`${jumlah}. [${swap.toString()}] -> ${deret.join(" ")}`);
                 swapped = true;
                 break;
 			}
