@@ -21,7 +21,7 @@ const sort=(deret)=>{
 			}
 		}
     };
-    console.log(`Jumlah swap=${jumlah}`);
+    console.log(`\nJumlah swap=${jumlah}`);
 	return deret;
 }
 const arr=[4,9,7,5,8,9,3];

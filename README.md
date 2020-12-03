@@ -21,6 +21,7 @@ output:
     [3,7] -> 4 5 3 7 8 9 9
     [3,5] -> 4 3 5 7 8 9 9
     [3,4] -> 3 4 5 7 8 9 9
+    
     Jumlah swap=10
 
 ## Simple mobile App
